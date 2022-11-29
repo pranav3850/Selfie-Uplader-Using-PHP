@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from takshved.com/selfie/4 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Nov 2022 08:19:38 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="M_Adnan">
+  <title>Selfie Generator</title>
+  <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/rs-plugin/css/settings.css" media="screen" />
+  <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="./assets/js/cropper.js"></script>
+  <script src="./assets/js/image.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-7476703-21');
+  </script>
+  <!-- Bootstrap Core CSS -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/cropper.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="./assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/ionicons.min.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/responsive.css" rel="stylesheet">
+  <link href="./assets/font/flaticon.css" rel="stylesheet">
+  <link href="./assets/css/boxstyle.css" rel="stylesheet">
+  <!-- JavaScripts -->
+  <script src="./assets/js/modernizr.js"></script>
+  <!-- Online Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Poppins:300,400,500,600,700|Montserrat:300,400,500,600,700,800"
+    rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+<style>
+  body {
+    background-color: #131313;
+  }
+</style>
+
+<body oncontextmenu="return false">
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="position-center-center">
+      <div class="ldr"></div>
+    </div>
+  </div>
+  <!-- Wrap -->
+  <!-- Main Layout -->
+  <main class="cd-main-content" style="overflow-x: hidden;">
+    <!-- Content -->
+    <div id="content">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="container-fluid">
+        <div class="row flex-column-reverse">
+          <div class="col-sm-12">
+            <div style="margin-top: 3%;text-align:center ;margin-bottom:3%;">
+              <h4>Select Your Choice Frame</h4>
+            </div>
+            <div class="scrt overflow-auto ">
+              <div class="wrapper">
+                <div class="box">
+                  <img src="./bapji1.jpg" class="items" name="bapji1.jpg" data-img_id="1" cnt_type="bapji1.jpg"
+                    onclick="changeImage(this);" title="Thumb Image" alt="business-category">
+                </div>
+                <div class="box">
+                  <img src="./bapji2.jpg" class="items" name="bapji2.jpg" data-img_id="2" cnt_type="bapji2.jpg"
+                    onclick="changeImage(this);" title="Thumb Image" alt="business-category">
+                </div>
+                <div class="box">
+                  <img src="./bapji4.jpg" class="items" name="bapji4.jpg" data-img_id="4" cnt_type="bapji4.jpg"
+                    onclick="changeImage(this);" title="Thumb Image" alt="business-category">
+                </div>
+                <div class="box">
+                  <img src="./bapji3.jpg" class="items" name="bapji3.jpg" data-img_id="3" cnt_type="bapji3.jpg"
+                    onclick="changeImage(this);" title="Thumb Image" alt="business-category">
+                </div>
+                <div class="box">
+                  <img src="./bapji6.jpg" class="items" name="bapji6.jpg" data-img_id="6" cnt_type="bapji6.jpg"
+                    onclick="changeImage(this);" title="Thumb Image" alt="business-category">
+                </div>
+                <div class="box">
+                  <img src="./bapji5.jpg" class="items" name="bapji5.jpg" data-img_id="5" cnt_type="bapji5.jpg"
+                    onclick="changeImage(this);" title="Thumb Image" alt="business-category">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-8" style="margin-top: 10%;">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card">
+                  <div class="img1"> <img src="./bapji1.jpg" id="images" class="img1" name="21" alt="IMAGE">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card ">
+                  <div>
+                    <h5 style="text-align: center;margin-top:5%">Enter Your Details</h5>
+                  </div>
+                  <form action="action.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group ">
+                      <label for="">Your Name</label>
+                      <input type="hidden" name="_token" value="enbw1slCbdMUYovmFlblLGZoicjxg6nyxAeEqK1f">
+                      <input type="text" name="name" id="name" class="form-control" value="" required=""
+                        placeholder="Enter Your name" maxlength="19">
+                    </div>
+                    <div class="form-group">
+                      <!-- <label for="">Select Picture</label>
+                      <input type="file" class="form-control" name="fileToUpload" id="fileToUpload"> -->
+                      <div class="imageUploader">
+                        <div class="user_pic_container_box">
+                          <img data-type="circle" data-width="349" data-height="349" class='user_pic_container'
+                            src="./assets/images/profile_img_3.png" />
+                        </div>
+
+                        <input readonly style="display: none" id='file_browse' name="test" type="file" accept="image/*">
+                        <input hidden type="text" name="profile_pic_2" class="value_container" value="nochange" />
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <section class="contact-area" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="contact-content text-center">
+                <a href="#"><img src="./keryarlogo.png" alt="logo"></a>
+                
+                <hr style="border:1px solid #ffffff;">
+                <h6 style="color: black;">Design & Developed by <a class="hover-target" href="https://keryar.com/"
+                  target="_blank" style="color: white;">Keryar</a> </h6>
+                <div class="contact-social">
+                  <ul>
+                    <!-- <li><a class="hover-target" href=""><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                    <li><a class="hover-target" href=""><i class="fa fa-linkedin-in"></i></a></li>
+                    <li><a class="hover-target" href=""><i class="fa fa-github"></i></a></li>
+                    <li><a class="hover-target" href=""><i class="fa fa-behance"></i></a></li>
+                    <li><a class="hover-target" href=""><i class="fa fa-pinterest-p"></i></a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="fixed-top text-white border border-white border-top-0 border-right-0 border-left-0"
+        style="background-color: #ff9900;height: 80px; width:20px;width: 100%;">
+        <div class="row">
+          <div class="col-6">
+            <img src="./bjp.png" style="height:80px;width:80px;margin-left: 10%;">
+          </div>
+          <div class="col-6">
+            <span>
+              <input type="hidden" id="sel_img_id" value="1" name="sel_img_id">
+            </span>
+            <input type="submit" name="download" class="btn btn-success" value="Submit"
+              style="height: 40px; width:150px; position: absolute; top: 15px; right: 10%;  padding: 2px;">
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <script>
+        function changeImage(e) {
+          document.getElementById('images').src = $(e).attr("name");
+          var x = $(e).data("img_id");
+          var y = $(e).attr("cnt_type");
+          $('#sel_img_id').val(x);
+          $('#cnt_type').val(y);
+          var videoEl = $('video')[0];
+          videoEl.play();
+        }
+      </script>
+      <script>
+        function changeImagefream(e) {
+          document.getElementById('freams').src = $(e).attr("name");
+          var x = $(e).data("img_id");
+          $('#sel_img_fream').val(x);
+        }
+      </script>
+      <script src="./assets/js/sweetalert.min.js"></script>
+      <!-- FOOTER -->
+  </main>
+</body>
+<!-- GO TO TOP  -->
+<!-- GO TO TOP End -->
+<script src="./assets/js/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/own-menu.js"></script>
+<script src="./assets/js/jquery.lighter.js"></script>
+<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/lazysizes.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script type="text/javascript" src="./assets/css/rs-plugin/js/jquery.tp.t.min.js"></script>
+<script type="text/javascript" src="./assets/css/rs-plugin/js/jquery.tp.min.js"></script>
